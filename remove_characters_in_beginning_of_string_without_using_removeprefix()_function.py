@@ -4,6 +4,7 @@
 name=input("Enter name:")
 
 #remove prefix
+name=name.removeprefix("Althea")
 
 #print function
 print(name)
