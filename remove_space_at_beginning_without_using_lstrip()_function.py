@@ -4,7 +4,7 @@
 name= input("add big space and enter your name:")
 
 #Remove space before name
-name=name.replace(" ","")
+no_space=name.replace(" ","")
 
 #Print the formatted name
-print(name)
+print(no_space)
