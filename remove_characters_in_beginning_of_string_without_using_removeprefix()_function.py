@@ -1,16 +1,14 @@
 #removeprefix() remove the characters at the beginning of the string that matches the function parameter. Create a program that do the same functionality without using removeprefix() function.
 
-#ask to input
-name=input("Enter sentence:")
-parameter= input("input parameter:")
-#remove prefix
-name=name.split()
+name=input("Enter sentence:")#ask to input
 
 while True:
-    try:
-        if parameter == name[0]:
-            no_suffix=name.remove(parameter)
+        parameter=input("input parameter:")
+
+#remove prefix
+        if name.startswith(parameter)==True:
+            no_suffix=name.replace(parameter,"")
             print(no_suffix)
             break
-    except:
-        print("!!THE PARAMETER YOU INPUTTED IS NOT A PREFIX!!")
+        else:
+            print("!!THE PARAMETER YOU INPUTTED IS NOT A PREFIX!!")
