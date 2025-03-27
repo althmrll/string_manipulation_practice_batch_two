@@ -4,5 +4,7 @@
 name= input("add big space and enter your name:")
 
 #Remove space before name
+name.replace(" ","")
+
 #Print the formatted name
 print(name)
