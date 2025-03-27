@@ -2,10 +2,15 @@
 
 #ask to input
 name=input("Enter sentence:")
-parameter= input("Input prefix you want to remove:")
-
+parameter= input("input parameter:")
 #remove prefix
-name=name.replace(parameter,"")
+name=name.split()
 
-#print function
-print(name)
+while True:
+    try:
+        if parameter == name[0]:
+            no_suffix=name.remove(parameter)
+            print(no_suffix)
+            break
+    except:
+        print("!!THE PARAMETER YOU INPUTTED IS NOT A PREFIX!!")
