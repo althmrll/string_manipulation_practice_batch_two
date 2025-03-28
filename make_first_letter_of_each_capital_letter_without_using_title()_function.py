@@ -7,9 +7,7 @@ sentence=input("Input sentence:")
 sentence=sentence.split()
 
 for elements in sentence:
-    title+=elements.capitalize()
-
-title.join(" ")#adds space for each word
+    title+=elements.capitalize()+" "
 
 #print it
-print (str(title))
+print (title.strip())
