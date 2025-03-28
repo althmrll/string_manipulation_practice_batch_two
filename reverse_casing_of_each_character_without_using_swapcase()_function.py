@@ -2,11 +2,14 @@ swapcase=""
 sentence=input("Input sentence in improper case:")
 
 #swapcase
-for letter in sentence:
-    if letter.isupper()==True:
-        swapcase+= letter.lower()
+for character in sentence:
+    if character.isupper()==True:
+        swapcase+= character.lower()
 
-    elif letter.islower()==True:
-        swapcase+= letter.upper()
+    elif character.islower()==True:
+        swapcase+= character.upper()
+
+    else:
+        swapcase+=character
 
 print(swapcase)#print
