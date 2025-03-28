@@ -8,7 +8,7 @@ endswith= sentence[::-1]
 reversed_parameter=parameter[::-1]
 
 if endswith.startswith(reversed_parameter):
-    print("The sentence DOES end with", parameter)
+    print("The sentence DOES end with '", parameter, "'")
 
 else:
-    print("The sentence DOES NOT end with", parameter)
+    print("The sentence DOES NOT end with '", parameter, "'")
