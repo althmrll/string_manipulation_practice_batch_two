@@ -1,11 +1,12 @@
 #Ask user to input sentence
 sentence= input("Input sentence:")
 #Ask user for parameter
-parameter=input("Input paramater:")
+parameter=input("Input parameter:")
 
-#determine if sentence ends with parameter without using endswith function
+endswith= sentence.find(parameter)
+
 #prints it
-if:
-    print("True")
-else:
+if sentence.find(parameter)==-1: #determine if sentence ends with parameter without using endswith function
     print("False")
+else:
+    print("True")
