@@ -2,11 +2,15 @@
 sentence=input("Input sentence in improper case:")
 
 #swapcase
-if sentence.lower([]):
-    sentence= sentence.upper([])
+while True:
+    if sentence.lower(sentence.index()):
+        sentence= sentence.upper(sentence.index())
 
-else:
-    sentence=sentence.lower([])
+    if sentence.upper(sentence.index()):
+        sentence= sentence.lower(sentence.index())
+    else:
+        continue
+
 
 #print
 print(sentence)
