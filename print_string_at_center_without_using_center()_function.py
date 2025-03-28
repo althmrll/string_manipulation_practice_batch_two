@@ -16,11 +16,18 @@ separator=input("Input separator(optional, space will be added if none is typed 
 if separator=="":
     separator=" "
 
-while len(sentence)!=parameter:
-    sentence= separator+sentence
-    if len(sentence)!=parameter:
-        sentence+= separator
+if parameter<=5:
+    while len(sentence)!=parameter:
+        sentence= separator+sentence
+        if len(sentence)!=parameter:
+            sentence+= separator
 
+elif parameter>=6:
+    while len(sentence)!=parameter:
+        sentence+= separator
+        if len(sentence)!=parameter:
+            sentence= separator+sentence
+            
 if separator==" ":
     print("'"+sentence+"'")
 else:
