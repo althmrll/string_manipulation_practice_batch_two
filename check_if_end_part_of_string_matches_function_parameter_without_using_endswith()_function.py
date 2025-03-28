@@ -7,7 +7,7 @@ parameter=input("Input parameter:")
 endswith= sentence[::-1]
 reversed_parameter=parameter[::-1]
 
-if endswith==reversed_parameter:
+if endswith.startswith(reversed_parameter):
     print("The sentence DOES end with", parameter)
 
 else:
