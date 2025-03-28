@@ -8,9 +8,8 @@ sentence=sentence.split()
 
 for elements in sentence:
     title+=elements.capitalize()
-    
-    if elements.isspace()==True:
-        title+=elements
+
+title.join(" ")#adds space for each word
 
 #print it
 print (str(title))
