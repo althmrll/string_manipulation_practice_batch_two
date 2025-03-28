@@ -2,12 +2,12 @@
 sentence=input("Input sentence in improper case:")
 
 #swapcase
-if sentence.islower(sentence.index())==True:
-    sentence= sentence.upper(sentence.index())
+for letter in sentence:
+    if letter.islower()==True:
+        sentence+= letter.upper()
 
-elif sentence.upper(sentence.index())==True:
-    sentence= sentence.lower(sentence.index())
-
+    elif letter.isupper()==True:
+        sentence+= letter.lower()
 
 #print
 print(sentence)
