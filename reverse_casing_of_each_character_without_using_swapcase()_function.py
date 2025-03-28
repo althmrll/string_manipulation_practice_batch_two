@@ -1,13 +1,15 @@
-#Ask user to input in impproper case
-sentence=input("Input sentence in improper case:")
-swapcase=""
+while True:
+
+    sentence=input("Input sentence in improper case:")
 
 #swapcase
-for letter in sentence:
-    if letter.islower()==True:
-        swapcase+= letter.upper()
+    for letter in sentence:
+        if letter.isupper()==True:
+            lower_case= letter.lower()
+            sentence= sentence.replace(letter, lower_case)
 
-    elif letter.isupper()==True:
-        swapcase+= letter.lower()
-    
-    print(swapcase)#print
+        elif letter.islower()==True:
+            upper_case= letter.upper()
+            sentence=sentence.replace(letter, upper_case)
+
+    print(sentence)#print
