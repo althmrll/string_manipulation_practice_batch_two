@@ -1,3 +1,5 @@
+left=0
+
 #Ask user to input sentence
 sentence=input("Input sentence:")
 
@@ -18,7 +20,10 @@ if separator=="":
 
 #center based on parameter inputted by user
 middle=parameter-len(sentence)
-left=middle//2
+if middle==1:
+    left=1
+else:
+    left=middle//2
 left_separator=separator*left
 left_and_sentence=left_separator+sentence
 right=parameter-len(left_and_sentence)
@@ -26,4 +31,7 @@ right_separator=separator*right
 center=left_and_sentence+separator*right
 
 #print it
-print(center)
+if separator==" ":
+    print("'"+center+"'")
+else:
+    print(center)
