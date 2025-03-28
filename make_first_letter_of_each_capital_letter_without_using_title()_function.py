@@ -1,3 +1,5 @@
+title=""
+
 #Ask user to input sentence
 sentence=input("Input sentence:")
 
@@ -5,7 +7,10 @@ sentence=input("Input sentence:")
 sentence=sentence.split()
 
 for elements in sentence:
-    title=elements.capitalize()
+    title+=elements.capitalize()
+    
+    if elements.isspace()==True:
+        title+=elements
 
 #print it
 print (str(title))
