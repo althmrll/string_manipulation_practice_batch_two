@@ -2,6 +2,10 @@
 sentence=input("Input sentence:")
 
 #Capitalize first letter of each word wihout using title
+sentence=sentence.split()
+
+for elements in sentence:
+    title=elements.capitalize()
 
 #print it
-print (sentence)
+print (str(title))
