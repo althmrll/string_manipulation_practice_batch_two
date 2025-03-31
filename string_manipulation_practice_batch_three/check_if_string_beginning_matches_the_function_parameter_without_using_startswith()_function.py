@@ -5,5 +5,8 @@ sentence= input("Enter sentence:")
 parameter= input("Enter parameter:")
 
 #Determine if sentence starts with parameter
-#print message
-print("sentence DOES start with '", parameter, "'")
+if sentence.endswith(parameter)==False:
+    print("sentence DOES NOT start with '", parameter, "'")
+
+else:
+    print("sentence DOES NOT start with '", parameter, "'") #print message
