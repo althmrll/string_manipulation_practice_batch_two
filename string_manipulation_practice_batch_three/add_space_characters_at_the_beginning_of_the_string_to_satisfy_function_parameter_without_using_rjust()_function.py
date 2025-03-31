@@ -6,7 +6,7 @@ while True:
     try:
         parameter= int(input("Enter parameter:"))
         break
-    
+
     except:
         print("!!INVALID INPUT. SHOULD BE A NUMBER!!")
 
@@ -19,9 +19,4 @@ num_of_filler=parameter-character_count#Subtract number of characters of sentenc
 filler=num_of_filler*fill#Multipy space to the difference of character and parameter
 rjust=filler+sentence#Add sentence and filler
 
-if fill==" ":
-    print("'",rjust,"'")#Print the output
-else:
-    print(rjust)
-
-
+print(rjust)#Print the output
