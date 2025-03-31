@@ -7,4 +7,4 @@ strip=reversed_sentence.lstrip()    #lstrip sentence
 rstrip=strip[::-1]#reverse sentence again
 
 #print output
-print(rstrip)
+print("\nOld:'",sentence,"'\nrstripped:'",rstrip,"'")
