@@ -5,15 +5,18 @@ while True:
     parameter= int(input("Enter parameter:"))
     try:
         fill=input("Input symbol/letter you want to fill the space with (Optional):") #Ask user for fill(optional)
-        break
+        if fill=="":
+            fill=" "
+        else:
+            break
         
     except:
         ("!!INVALID INPUT. SHOULD BE A NUMBER!!")
 
-#Determine number of characters of sentence
-#Subtract number of characters of sentence to parameter
-#Multipy space to the difference of character and parameter
-#Add sentence and space
-#Print the output
+character_count=len(sentence) #Determine number of characters of sentence
+num_of_space=parameter-character_count#Subtract number of characters of sentence to parameter
+space=num_of_space*fill#Multipy space to the difference of character and parameter
+rjust=sentence+space#Add sentence and space
+print("'",rjust,"'")#Print the output
 
 
