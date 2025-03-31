@@ -4,7 +4,7 @@ sentence=input("Enter sentence:")
 #Ask user to input parameter
 while True:
     try:
-        parameter=int(input("Enter parameter:"))
+        parameter=input("Enter parameter:")
         break
     except:
         print("!!INVALID INPUT. SHOULD BE NUMBER!!")
@@ -12,8 +12,9 @@ while True:
 #Determine first occurence of parametre starting from the last
 reversed_sentence=sentence[::-1]
 reversed_parameter=parameter[::-1]
-index=reversed_sentence.index(parameter)
-rindex=parameter-index
+index=reversed_sentence.index(reversed_parameter)
+sentence_indexing=len(sentence)-1
+rindex=sentence_indexing-index
 
 
 #print index
