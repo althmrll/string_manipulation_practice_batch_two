@@ -1,22 +1,20 @@
-lower_count=0
+upper_count=0
+character_count=0
 
 #Ask user ot input sentence
 sentence= input("Enter sentence:")
-sentence_count= sentence.count()
+
 #Determine if letter is in lowercase without using islower()
 for letter in sentence:
-    if letter.isupper()==False:
-        lower_count+=1
-    
-    elif letter.isupper()==True:
-        continue
-
-    else: 
-        lower_count+=1
+    if letter.isupper()==True:
+        upper_count+=1
+        character_count+=1
+    else:
         continue
 
 #print
-if lower_count==sentence.count():
-    print("sentence IS in lowercase")
+if upper_count!=0:
+    print("The sentence IS NOT lower")
+
 else:
-    print("sentence IS NOT in lowercase")
+    print("The sentence IS lower")
