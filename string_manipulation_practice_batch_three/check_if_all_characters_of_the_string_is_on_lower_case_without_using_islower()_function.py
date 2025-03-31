@@ -9,11 +9,17 @@ for letter in sentence:
     if letter.isupper()==True:
         upper_count+=1
         character_count+=1
+    elif letter.isalpha()==True:
+        character_count+=1
+        continue
     else:
         continue
 
 #print
 if upper_count!=0:
+    print("The sentence IS NOT lower")
+
+elif character_count==0:
     print("The sentence IS NOT lower")
 
 else:
